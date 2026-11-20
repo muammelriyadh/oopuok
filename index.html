@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>بايثون و OOP بالعراقي</title>
+<title>بايثون و OOP</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
 <style>
 :root{--bg:#f3f5fa;--sf:#fff;--tx:#14213d;--mu:#5b6685;--ac:#2447c8;--gd:#e8a317;--ok:#138a4a;--no:#c62828;--bd:#d9dfee;--ed:#0a1020;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -50,10 +50,12 @@ input{font:inherit;direction:ltr;width:90px;padding:4px;border:1px solid var(--b
 .mo{direction:ltr;padding:4px;border-width:2px}.mo .tm{min-height:70px;border:0;background:none;padding:4px;justify-content:center}.mo.g{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,var(--sf))}.mo.r{border-color:var(--no);animation:sk .3s}
 @keyframes sk{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .fb{color:var(--no);min-height:28px;font-weight:700}.q2{font-weight:700;margin:12px 0 2px}details summary{cursor:pointer;font-weight:700}
+footer{text-align:center;color:var(--mu);font-size:14px;padding:18px 14px 28px;border-top:1px solid var(--bd);max-width:800px;margin:0 auto}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
-<header><h1>🐍 بايثون و OOP بالعراقي</h1><div class="sub">مختبر بايثون: افهم، جرّب، وكسّر الكود</div><div class="rank" id="rk"></div><div class="bar"><i id="pb"></i></div><small id="pt"></small></header>
+<header><h1>🐍 بايثون و OOP</h1><div class="sub">مختبر بايثون: افهم، جرّب، وكسّر الكود</div><div class="rank" id="rk"></div><div class="bar"><i id="pb"></i></div><small id="pt"></small></header>
 <nav id="nav"></nav><main id="m"></main>
+<footer>صُمّم هذا الموقع لإرضاء السيد مؤمل رياض</footer>
 <script>
 const L=[
 {t:"1 · المقدمة",d:`تخيّل أول يوم دوام بشركة أمن سيبراني بكربلاء، والمدير يگلك: «أنت متدرب جديد، وكل مهمة راح تعلمك شي».<br><br><b>البرنامج</b> ورقة تعليمات تعطيها للكمبيوتر وهو ينفذها سطر ورا سطر. وبايثون هي اللغة اللي نكتب بيها هاي التعليمات.<br><b>المتغير</b> مثل علبة عليها ملصق: <code>x = 5</code> يعني حطيت 5 بعلبة اسمها x. إذا كتبت <code>x = 7</code> رميت القديم وحطيت الجديد.<br><b>أنواع القيم</b>: int عدد صحيح (5)، float عدد بفاصلة (5.5)، str نص بين علامتين تنصيص، bool صح أو غلط.<br><b>input</b> تسأل المستخدم، وجوابه يوصلك <u>نص دايماً</u> حتى لو كتب رقم. فإذا تريد تجمعه أو تطرحه لازم تحوله بـ int().<br><b>غلطة تصير هواية</b>: تكتب <code>"5" + 3</code> فيطلع خطأ، لأن نص ما ينجمع مع رقم.`,k:["البوابة","الحارس يريد برنامج يسأل الموظف عن اسمه وعمره، ويطبع له كم راح يصير عمره بعد 5 سنين.","# اكتب الكود هنا\n",'name = input("شنو اسمك؟ ")\nage = int(input("شكد عمرك؟ "))\nprint("هلا", name, "- بعد 5 سنين عمرك", age + 5)',"<b>السطر 1:</b> input تسأل وتخزن الجواب بـ name.<br><b>السطر 2:</b> الجواب يجي نص، فلفّيناه بـ int() حتى نگدر نجمع عليه.<br><b>السطر 3:</b> print تطبع عدة أشياء بفواصل، و age + 5 تنحسب قبل الطباعة. بدون int() راح يطلع TypeError."],c:[
